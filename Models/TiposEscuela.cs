@@ -4,6 +4,7 @@ namespace CoursePractice.Models
     {
         Primaria, 
         Secundaria, 
-        PreEscolar
+        PreEscolar,
+        Online
     }
 }

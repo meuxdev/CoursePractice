@@ -12,7 +12,11 @@ namespace CoursePractice.Controllers
             {
                 UniqueId = Guid.NewGuid().ToString(),
                 AñoDeCreación = 2005,
-                Nombre = "Platzi"
+                Nombre = "Platzi",
+                Pais = "Colombia",
+                Dirección = "Random Direccion.",
+                Ciudad = "Bogota",
+                TipoEscuela = TiposEscuela.Online
             };
 
             ViewBag.DinamicProp = "My name is jeff!";
