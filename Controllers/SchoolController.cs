@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using CoursePractice.Models;
+using System;
 
 namespace CoursePractice.Controllers
 {
@@ -6,7 +8,13 @@ namespace CoursePractice.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var school = new School()
+            {
+                Name = "Random School",
+                SchoolId = Guid.NewGuid().ToString(),
+                FoundationYear = 2002
+            };
+            return View(school);
         }
     }
 }
