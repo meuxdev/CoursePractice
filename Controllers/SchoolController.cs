@@ -8,12 +8,14 @@ namespace CoursePractice.Controllers
     {
         public IActionResult Index()
         {
-            var school = new School()
+            var school = new Escuela()
             {
-                Name = "Random School",
-                SchoolId = Guid.NewGuid().ToString(),
-                FoundationYear = 2002
+                UniqueId = Guid.NewGuid().ToString(),
+                AñoDeCreación = 2005,
+                Nombre = "Platzi"
             };
+
+            ViewBag.DinamicProp = "My name is jeff!";
             return View(school);
         }
     }

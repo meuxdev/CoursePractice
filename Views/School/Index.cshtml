@@ -1,11 +1,14 @@
-﻿@model School 
+﻿@model Escuela 
 
 @{
     ViewData["Title"] = "School Information";
-    Layout = "_Layout";
+    Layout = "_SimpleLayout";
 }
 
-<h1>School</h1>
-<h2>Name:  @Model.Name</h2>
-<p> <strong>Foundation year: @Model.FoundationYear </strong>  </p>
+<h1>@ViewData["Title"]</h1>
+<h2>Name:  @Model.Nombre</h2>
+<p> <strong>Foundation year: @Model.AñoDeCreación</strong>  </p>
+
+<p> <i> @ViewData["DinamicProp"]</i> </p>
+<p> <i> @ViewBag.DinamicProp </i> </p>
 
