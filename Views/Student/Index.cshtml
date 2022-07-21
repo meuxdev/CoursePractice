@@ -1,7 +1,7 @@
-﻿@model IReadOnlyList<Asignatura>
+﻿@model Alumno 
 
 @{
-    ViewData["Title"] = "All Assingments";
+    ViewData["Title"] = "Student Information";
     Layout = "_SimpleLayout";
 }
 
@@ -9,7 +9,7 @@
 
 <h1>@ViewBag.Title</h1>
 <section>
-    <partial name="ListSchoolEntity" />
+    <partial name="SimpleSchoolEntity"/>
     <p> <i>@ViewBag.Date</i></p>
 </section>
 

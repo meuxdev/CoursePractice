@@ -8,7 +8,7 @@ namespace CoursePractice.Models
         public string Nombre { get; set; }
 
         public Alumno Alumno { get; set; }
-        public Asignatura Asignatura  { get; set; }
+        public Alumno Asignatura  { get; set; }
 
         public float Nota { get; set; }
 

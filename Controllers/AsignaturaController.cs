@@ -20,7 +20,7 @@ namespace CoursePractice.Controllers
         {
 
             var listaAsignaturas = new List<Asignatura>() {
-                new Asignatura {
+                new Asignatura{
                     Nombre = "Matemáticas",
                     UniqueId = Guid.NewGuid ().ToString ()
                 },
