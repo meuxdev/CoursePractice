@@ -1,0 +1,19 @@
+﻿@model IReadOnlyList<Asignatura>
+
+@{
+    ViewData["Title"] = "All Assingments";
+    Layout = "_SimpleLayout";
+}
+
+
+
+<h1>@ViewBag.Title</h1>
+<section>
+    @foreach (var assign in Model)
+    {
+        <partial name="SingleAssingment" model="assign" />
+    }
+
+    <p> <i>@ViewBag.Date</i></p>
+</section>
+

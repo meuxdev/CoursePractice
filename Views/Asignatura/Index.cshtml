@@ -1,4 +1,4 @@
-﻿@model Asignatura
+﻿@model Asignatura 
 
 @{
     ViewData["Title"] = "Assignment Information";
@@ -7,9 +7,9 @@
 
 
 
+<h1>@ViewBag.Title</h1>
 <section>
-    @*<h1>@ViewData["Title"]</h1>*@
-    <h1>@ViewBag.Title</h1>
-    <h2>Name:  @Model.Nombre</h2>
+    <partial name="SingleAssingment"/>
+    <p> <i>@ViewBag.Date</i></p>
 </section>
 
